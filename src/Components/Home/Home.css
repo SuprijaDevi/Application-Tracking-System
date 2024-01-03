@@ -1,0 +1,53 @@
+.additional-content{
+    text-align:left;
+    margin-left: 200px;
+    margin-top: 9%;
+    font-family: 'Trebuchet MS';
+    color: azure;
+  }
+  .small-image {
+    margin-left: 55%;
+    margin-top: -30%; 
+    width: 30%;
+    z-index: 1;
+      
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+  .primary-button1{
+    background-color: transparent;
+    color:rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    cursor:pointer;
+    margin-left: -55%;
+  }
+  body{
+    background-color: #202d3e;
+  }
+  .topBlur {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    min-width: 100px;
+    min-width: 100px;
+    top: 30%;
+    left: 65%;
+    border-radius: 764px;
+    background: rgba(85, 114, 169, 0.7);
+    filter: blur(150px);
+    z-index: 0;
+  }
