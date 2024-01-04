@@ -7,17 +7,19 @@ import Testimonal from './Components/Testimonals/Testimonals.js';
 import Footer from './Components/Footer/Footer.js';
 import Pricing from './Components/Pricing/Pricing.js';
 import Workflow from './Components/WorkFlow/Workflow.js';
+import Popup from './Components/Popup/Popup.js';
 function App() {
   return (
     <div className="App">
-      {/* <Login />
-      <Signup /> */}
+      {/* <Login /> */}
+      {/* <Signup /> */}
       <Navbar />
       <Home />
       <Features />
       <Pricing />
       <Workflow />
       <Testimonal />
+      {/* <Popup /> */}
       <Footer />
     </div>
   );

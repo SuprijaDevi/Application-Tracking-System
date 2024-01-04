@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-// import './Login.css';
+// Log.js
 
-function Login() {
+import React, { useState } from 'react';
+import './Login.css'; // Import the CSS file
+
+const Log = ({ onClose, switchForm, onLogin }) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -16,16 +18,15 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log('Form data submitted:', formData);
-
+    console.log('Login Form data submitted:', formData);
+    onLogin();
+    onClose(); // Close the login popup
   };
 
   return (
-    <div className="signin-container">
-      <div className="signup-container1">
+      <div className="signup-container">
         <h2>Login</h2>
-        <form className="signup-form" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="signup-form">
           <div className="input-group">
             <label htmlFor="email">Email:</label>
             <input
@@ -57,12 +58,14 @@ function Login() {
         </form>
         <p>
           <h3>
-            Don't have an account? <a href="/signup">Sign Up</a>
+            Don't have an account?{' '}
+            <button type="button" onClick={switchForm}>
+              Sign Up
+            </button>
           </h3>
         </p>
       </div>
-    </div>
   );
-}
+};
 
-export default Login;
+export default Log;

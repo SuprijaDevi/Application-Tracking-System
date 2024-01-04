@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-// import './Login.css';
+// Signin.js
 
-function Signup() {
+import React, { useState } from 'react';
+import './Login.css'; // Import the CSS file
+
+const Signin = ({ onClose, switchForm }) => {
   const [formData, setFormData] = useState({
     username: '',
     mobile: '',
@@ -27,16 +29,17 @@ function Signup() {
       return;
     }
 
-    console.log('Form data submitted:', formData);
+    console.log('Signup Form data submitted:', formData);
+    // Add your signup logic here
 
     setPasswordError('');
+    onClose(); // Close the signup popup
   };
 
   return (
-    <div className="signin-container">
-    <div className="signup-container">
+    <div className="signup-container1">
       <h2>Create an Account</h2>
-      <form className="signup-form" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="signup-form">
         <div className="input-group">
           <label htmlFor="username">Username:</label>
           <input
@@ -106,12 +109,14 @@ function Signup() {
       </form>
       <p>
         <h3>
-          Already have an account?Login
+          Already have an account?{' '}
+          <button type="button" onClick={switchForm}>
+            Login
+          </button>
         </h3>
       </p>
-      </div>
     </div>
   );
-}
+};
 
-export default Signup;
+export default Signin;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import Popup from '../Popup/Popup';
 const Navbar = () => {
     return (
     <div>
@@ -13,8 +13,9 @@ const Navbar = () => {
                 <a href="">Pricing</a>
                 <a href="">Workflow</a>
                 <a href="">Testimonials</a>
-                <a href="./Components/login">
-                <button className="primary-button">Login</button></a>
+                <Popup />
+                {/* <a href="./Components/login">
+                <button className="primary-button">Login</button></a> */}
             </div>
         </nav>
     </div>
