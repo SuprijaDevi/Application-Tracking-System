@@ -1,19 +1,19 @@
 /* Login.css */
 
-.signup-container {
+/* .signup-container {
   background-image: url('https://www.employastar.com/wp-content/uploads/2020/08/Employastar_Blog_687x370_How-an-ATS-software-works.jpg');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   max-width: 400px;
   margin: auto;
   margin-top: 0%;
   margin-left: 0%;
   padding: 20px;
   border: 0px solid #ccc;
-  /* backdrop-filter: blur(15px); */
-  /* border-radius: 5px; */
-  /* box-shadow: 0 0 10px rgb(129, 130, 131); */
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(129, 130, 131);
   background-color: transparent;
-}
+} */
 
 
 /* .signup-container1 {
@@ -29,6 +29,7 @@
 
 .signup-container h2 {
   text-align: left;
+  color:#007bff;
 }
 
 .signup-form {
@@ -67,6 +68,15 @@ input {
 
 .signup-button:hover {
   background-color: #0056b3;
+}
+
+.switch-button {
+  background-color: #00ff2f;
+  color: blacl;
+  cursor: pointer;
+  border: 2px solid #00ff2f;
+  border-radius: 5px;
+  padding: 4px;
 }
 
 h3 {

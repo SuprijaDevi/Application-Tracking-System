@@ -126,22 +126,30 @@ import Signin from './Signin'; // Import the Signup component
 import './Login.css';
 
 const style = {
+  backgroundImage: 'url("https://www.employastar.com/wp-content/uploads/2020/08/Employastar_Blog_687x370_How-an-ATS-software-works.jpg")',
+  backgroundRepeat: 'no-repeat',
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
+  border: '2px solid #fff',
+  boxShadow: 44,
+  p: 5,
 };
 
 const buttonStyle = {
   position: 'absolute',
   top: '50%',
-  left: '93%',
+  left: '94%',
   transform: 'translate(-50%, -50%)',
+  backgroundColor: '#007bff',
+  color: '#fff',
+  border: '1px solid #007bff',
+  borderRadius: '5px',
+  padding: '6px',
+  cursor: 'pointer',
 };
 
 export default function Popup() {

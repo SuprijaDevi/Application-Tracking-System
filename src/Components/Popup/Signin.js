@@ -110,7 +110,7 @@ const Signin = ({ onClose, switchForm }) => {
       <p>
         <h3>
           Already have an account?{' '}
-          <button type="button" onClick={switchForm}>
+          <button type="button" className="switch-button" onClick={switchForm}>
             Login
           </button>
         </h3>

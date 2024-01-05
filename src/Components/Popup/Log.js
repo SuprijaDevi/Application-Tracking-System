@@ -59,7 +59,7 @@ const Log = ({ onClose, switchForm, onLogin }) => {
         <p>
           <h3>
             Don't have an account?{' '}
-            <button type="button" onClick={switchForm}>
+            <button type="button" className="switch-button" onClick={switchForm}>
               Sign Up
             </button>
           </h3>

@@ -17,12 +17,19 @@ nav {
 
   }
   
+  .navbar-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 11%;
+  }
+
   .navbar-links-container a {
-    margin-right: 160px;
     text-decoration: none;
     color: white;
     font-family: 'Trebuchet MS';
     font-size: large;
+    padding:4%;
   }
   
   .primary-button {
@@ -37,8 +44,8 @@ nav {
     color: orange;
   }
   span{
-    font-size: 170%;
-    font-family:cursive;
+    font-size: 200%;
+    font-family:'Courier New', Courier, monospace;
   }
   
 
